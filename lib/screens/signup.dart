@@ -101,16 +101,16 @@ class _SignUpState extends State<SignUp> {
     final Size deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color(0xffffffff),
-      appBar: AppBar(
-        leading: BackButton(
-          // color: Color(0xffec6b67),
-          color: Colors.indigo,
-        ),
-        elevation: 0,
-        backgroundColor: Colors.white.withAlpha(0),
-        // backgroundColor: Platform.isIOS ? Color(0xffffffff) : Colors.white,
-        // title: Text("Sign up with email", style: TextStyle()),
-      ),
+      // appBar: AppBar(
+      //   leading: BackButton(
+      //     // color: Color(0xffec6b67),
+      //     color: Colors.indigo,
+      //   ),
+      //   elevation: 0,
+      //   backgroundColor: Colors.white.withAlpha(0),
+      //   // backgroundColor: Platform.isIOS ? Color(0xffffffff) : Colors.white,
+      //   // title: Text("Sign up with email", style: TextStyle()),
+      // ),
       body: SingleChildScrollView(
         child: GestureDetector(
           behavior: HitTestBehavior.opaque,

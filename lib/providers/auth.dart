@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:async';
-
+import 'dart:io';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,7 +22,8 @@ class Auth with ChangeNotifier {
   int _regStep;
   bool _regComplete;
   // Timer _authTimer;
-  final String _serverName = "http://0.0.0.0:2900";
+  final String _serverName =
+      Platform.isIOS ? "http://0.0.0.0:2900" : "http://10.0.2.2:2900";
   bool get isAuth {
     print(_token);
     return _token != null;
