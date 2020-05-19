@@ -127,6 +127,19 @@ class _SignUpState extends State<SignUp> {
                 SizedBox(
                   height: 40,
                 ),
+                Row(
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: BackButton(
+                        // color: Color(0xffec6b67),
+                        color: Colors.indigo,
+                      ),
+                    ),
+                  ],
+                ),
                 Container(
                   padding: EdgeInsets.all(20),
                   alignment: Alignment.center,
@@ -326,7 +339,7 @@ class _SignUpState extends State<SignUp> {
                             ],
                           ),
                           Container(
-                            height: 320,
+                            height: 220,
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage("assets/images/signup.png"),
